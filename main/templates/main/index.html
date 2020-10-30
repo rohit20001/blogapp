@@ -3,6 +3,9 @@
 {% block title %}Mysite | Home{% endblock %}
 {% block content %}
 
-<h1>Hellow World</h1>
+{% for post in posts %}
+<h1>{{ post.title }}</h1>
+<p>{{ post.content }}</p>
+{% endfor %}
 
 {% endblock %}
