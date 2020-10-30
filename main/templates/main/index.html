@@ -5,7 +5,7 @@
 
 {% for post in posts %}
 <h1>{{ post.title }}</h1>
-<p>{{ post.content }}</p>
+<p>{{ post.content |safe }}</p>
 {% endfor %}
 
 {% endblock %}
